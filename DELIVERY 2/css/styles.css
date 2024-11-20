@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1d79e;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .first-section, .final-section {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #8f580b;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d28d16;
+}
+
+.header p {
+    font-size: 1.1em;
+}
+
+.instagram-link {
+    padding: 1em;
+    text-align: left;
+}
+
+.instagram-link a {
+    color: #333;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.instagram-link a:hover {
+    color: #555;
+}
+
+.first-section {
+    text-align: left;
+}
+
+.wrapped-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.wrapped-text {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.4;
+}
+
+.activities-text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.activities-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    width: 30%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #333;
+    transition-property: transform, border-radius;
+    transition-duration: 0.3s;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.final-section {
+    text-align: left; 
+    margin-top: 30px;
+}
+
+.final-header {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333; 
+    margin: 0; 
+}
+
+.final-description {
+    font-size: 1.2em; 
+    font-weight: 700;
+    color: #333; 
+    margin: 0; 
+}
+
+.footer {
+    background-color: #000000;
+    color: #333;
+    padding: 60px;
+    text-align: left;
+}
+
+.image-item.centered {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.image-item.centered img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .wrapped-title {
+        font-size: 1.5em;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-item img {
+        height: auto;
+    }
+
+    p.description {
+        font-size: 0.9em;
+    }
+}
